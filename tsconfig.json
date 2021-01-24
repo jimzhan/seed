@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Node 14",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "build",
+    "lib": [
+      "ES2019",
+      "ES2020.Promise",
+      "ES2020.BigInt",
+      "ES2020.String",
+      "ESNext.AsyncIterable"
+    ],
+    "module": "CommonJS",
+    "target": "ES6",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true
+
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts"
+  ]
+}
