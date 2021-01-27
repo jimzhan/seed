@@ -18,16 +18,26 @@
     "url": "https://github.com/jimzhan/seed/issues"
   },
   "homepage": "https://github.com/jimzhan/seed#readme",
-  "main": "src/index.js",
+  "main": "src/server/index.js",
   "husky": {
     "hooks": {
       "pre-commit": "npm run lint"
     }
   },
+  "nodemonConfig": {
+    "watch": [
+      "src/server"
+    ],
+    "ext": "js",
+    "ignore": [
+      "*.spec.js"
+    ],
+    "delay": "0"
+  },
   "scripts": {
     "lint": "eslint src",
     "test": "ava",
-    "debug": "nodemon src/server/index.js",
+    "debug": "nodemon src/main.js",
     "build": "next build"
   },
   "dependencies": {
