@@ -32,5 +32,5 @@
   "prettier.jsxSingleQuote": false,
   "prettier.jsxBracketSameLine": false,
   "prettier.quoteProps": "as-needed",
-  "prettier.tabWidth": 2,
+  "prettier.tabWidth": 2
 }
