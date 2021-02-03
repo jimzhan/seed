@@ -1,2 +1,2 @@
 # Seed
-Seed for web application in TypeScript
+Seed for web application.
